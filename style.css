@@ -1,0 +1,175 @@
+div.container {
+    width: 60%;  
+    margin: auto;  
+}
+/* định dạng thẻ div chưa các button tab */
+div.tab {
+    overflow: hidden; 
+    border: 1px solid #ccc; 
+    background-color: #f1f1f1; 
+    z-index: 1;
+}
+ 
+/* định dạng các button tab */
+.tabMenu {
+    display: inline-block;
+}
+
+.tabBtn {
+    background-color: inherit; 
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    min-width: 140px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 17px;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.tabMenu:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.tabMenu:hover .tabBtn {background-color: #3e8e41;}
+ 
+/* đổi màu nền cho tab đang được hiển thị nội dung */
+.tabMenu.active {
+    background-color: #ccc;
+}
+
+.accLink {
+    background-color: inherit; 
+    border: none;
+    outline: none;
+    padding: 5px 16px;
+    min-width: 150px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 17px;
+}
+ 
+/* định dạng nội dung hiển thị */
+.tabContent {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.inforForm {
+    background-color: white;
+    border-style: solid;
+    display: none;
+    position: absolute;
+    width: 35%;
+    margin-left:auto;
+    margin-right:auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+.form {
+    background-color: white;
+    border-style: solid;
+    position: absolute;
+    width: 35%;
+    margin-left:auto;
+    margin-right:auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+.inforContainer {
+    width: 80%;
+    margin: auto;
+}
+
+.center {
+    margin: auto;
+}
+
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity:1;
+}
+
+.signin {
+    text-align: center;
+}
+
+.card-item {
+    margin: 25px;
+}
+
+.item-image {
+    width: 250px;
+    height: 250px;
+    display: inline-table;
+}
+
+.card-item-infor {
+    margin: 20px 0;
+}
+
+.card-item-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-item-price {
+    font-style: italic;
+}
+  
